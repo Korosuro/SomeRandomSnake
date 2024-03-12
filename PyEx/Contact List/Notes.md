@@ -1,0 +1,2 @@
+The contact list is going to be my first project with multiple Python files. It will need to have a database on the back and a GUI to interact with it.
+The python code is going to deal with the communication and stuff like that. It will also save the data to the sql Database
