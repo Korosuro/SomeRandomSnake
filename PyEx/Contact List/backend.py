@@ -6,6 +6,7 @@ vorname = str(input("Vorname: "))
 nachname = str(input("Nachname: "))
 telnum = int(input("Telefonnummer: "))
 mail = str(input("Mail-Adresse: "))
+adress = str(input("Wohnort: "))
 
 sql = "INSERT INTO contacts (Nachname, Vorname, Telefonnummer, Mail) VALUES (%s, %s, %s, %s)"
 data = (vorname, nachname, telnum, mail)
