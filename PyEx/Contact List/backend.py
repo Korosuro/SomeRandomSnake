@@ -1,5 +1,5 @@
 import mysql.connector
-conn = mysql.connector.connect(host="localhost", password="+C,+E}>{kk}$dO36", user="root", database="contactlist")
+conn = mysql.connector.connect(host="localhost", password="+C,+E}>{kk}$dO36", user="root", database="contactlist")  
 
 
 mycursor =  conn.cursor()
