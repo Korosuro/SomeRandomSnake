@@ -57,10 +57,22 @@ submit_button = Button(root, text="Bestätigen", command=submit_data)
 submit_button.grid(column=0, row=6)
 
 suchepre = Label(root, text="Suche")
-suchepre.grid(column=2, row=1)
+suchepre.grid(column=2, row=0)
 suche = Entry(root)
-suche.grid(column=3, row=1)
+suche.grid(column=2, row=0)
 
+data_label = Label(root, text="")
+data_label.grid(column=2, row=1)
 
+def show_data():
+    fetched_data = backend.data_output()
+    data_label.config(text="")
+
+    for row in fetched_data:
+        formatted_row = " | ".join(map(str, row))
+        data_label.config(text=data_label.cget("text") + "\n" + formatted_row)
+
+show_data = Button(root, text="Zeige Kontakte", command=show_data)
+show_data.grid(column=0, row=7)
 
 root.mainloop()

@@ -21,4 +21,14 @@ def data_input(vorname, nachname, telnum, mail, adress):
 
     print("Success")
 
+
+def data_output(Vorname, Nachname, Telefonnummer, Mail, Wohnort):
+    query = "SELECT * FROM contacts"
+    mycursor.execute(query)
+
+    data = mycursor.fetchall()
+
+    return data
+
+
     
