@@ -56,4 +56,11 @@ def submit_data():
 submit_button = Button(root, text="Bestätigen", command=submit_data)     
 submit_button.grid(column=0, row=6)
 
+suchepre = Label(root, text="Suche")
+suchepre.grid(column=2, row=1)
+suche = Entry(root)
+suche.grid(column=3, row=1)
+
+
+
 root.mainloop()
