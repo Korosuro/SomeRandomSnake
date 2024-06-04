@@ -4,7 +4,7 @@ from prettytable import PrettyTable
 
 mycursor = conn.cursor()
 
-query = "SELECT * from contacts"
+query = "SELECT * FROM contacts"
 mycursor.execute(query)
 
 rows = mycursor.fetchall()

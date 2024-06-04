@@ -62,7 +62,7 @@ suche = Entry(root)
 suche.grid(column=2, row=0)
 
 data_label = Label(root, text="")
-data_label.grid(column=2, row=1)
+data_label.grid(column=2, row=1, rowspan=5)
 
 def show_data():
     fetched_data = backend.data_output()
@@ -73,6 +73,6 @@ def show_data():
         data_label.config(text=data_label.cget("text") + "\n" + formatted_row)
 
 show_data = Button(root, text="Zeige Kontakte", command=show_data)
-show_data.grid(column=0, row=7)
+show_data.grid(column=1, row=0)
 
 root.mainloop()
